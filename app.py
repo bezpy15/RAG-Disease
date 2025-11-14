@@ -51,7 +51,163 @@ EXAMPLE_PROMPTS = [
     "Summarize the key mechanisms by which BHB affects mitochondrial function.",
     "How does BHB influence inflammatory pathways in human immune cells?",
     "Explain what is known about BHB and its role in neuroprotection.",
-
+    "Describe the evidence for BHB’s impact on cardiovascular health markers.",
+    "Compare endogenous BHB (e.g., from fasting) vs exogenous ketone supplements in human studies.",
+    "Summarize how BHB interacts with histone deacetylases (HDACs) and gene expression.",
+    "Describe the role of BHB in oxidative stress and redox homeostasis.",
+    "What is known about BHB’s effects on insulin sensitivity and glucose metabolism?",
+    "Explain how BHB may modulate the NLRP3 inflammasome and inflammatory cytokines.",
+    "Detail the association between BHB and cognitive performance or brain energy metabolism.",
+    "Summarize safety and adverse effects reported for exogenous ketone supplementation.",
+    "Describe the dose–response relationships observed for BHB in human clinical trials.",
+    "Explain what is known about BHB’s role in skeletal muscle function and exercise performance.",
+    "Describe the evidence for BHB as a signaling metabolite beyond its role as an energy substrate.",
+    "Summarize how BHB levels change in response to diet, fasting, and exercise.",
+    "Explain how BHB may influence epigenetic regulation via histone modifications.",
+    "Describe the pharmacokinetics of exogenous BHB (ketone esters/salts) in humans.",
+    "Summarize the key differences between β-hydroxybutyrate and other ketone bodies.",
+    "What is known about BHB’s effects on appetite and satiety regulation?",
+    "Describe how BHB interacts with GPR109A (HCAR2) and downstream signaling pathways.",
+    "Summarize how BHB might influence aging-related pathways and longevity.",
+    "Explain how BHB may impact endothelial function and vascular health.",
+    "Describe the relationship between BHB and markers of metabolic health (e.g., HbA1c, lipids).",
+    "Summarize the evidence for BHB’s effects in neurodegenerative diseases (e.g., Alzheimer’s, Parkinson’s).",
+    "How does BHB affect mitochondrial biogenesis and PGC-1α signaling?",
+    "Describe what is known about BHB in the context of heart failure and cardiac metabolism.",
+    "Summarize the interactions between BHB and autophagy pathways.",
+    "Explain the role of BHB in the context of sepsis and critical illness.",
+    "Describe the evidence for BHB’s effects on mood and psychiatric conditions.",
+    "Summarize how BHB influences oxidative phosphorylation and ATP production.",
+    "Explain how BHB impacts the balance between glycolysis and fatty acid oxidation.",
+    "Describe BHB’s effects on the gut microbiome, if any have been reported.",
+    "Summarize the role of BHB in regulating blood–brain barrier integrity.",
+    "How does BHB influence lactate metabolism and MCT transporters?",
+    "Describe BHB’s role in the context of cancer metabolism and potential therapeutic effects.",
+    "Summarize the evidence for BHB’s effects on bone metabolism and osteoporosis risk.",
+    "Explain how BHB may affect liver fat content and non-alcoholic fatty liver disease (NAFLD).",
+    "Describe the relationship between BHB and stress hormone regulation (e.g., cortisol).",
+    "Summarize how BHB interacts with sirtuins and NAD+ metabolism.",
+    "Explain what is known about BHB’s effects on renal function and acid–base balance.",
+    "Describe the time course of BHB changes after ingestion of ketone esters.",
+    "Summarize how BHB levels correlate with performance outcomes in endurance athletes.",
+    "Explain BHB’s role in hypoglycemia prevention or mitigation.",
+    "Describe how BHB interacts with insulin signaling pathways in peripheral tissues.",
+    "Summarize the evidence for BHB’s effects on inflammatory bowel disease (IBD) or gut inflammation.",
+    "Explain the concept of ‘BHB tolerance’ or adaptation with repeated supplementation.",
+    "Describe the influence of BHB on sleep architecture or sleep quality.",
+    "Summarize the potential benefits and risks of combining BHB supplementation with a ketogenic diet.",
+    "Explain how BHB affects mitochondrial ROS production and antioxidant defenses.",
+    "Describe the mechanism of BHB uptake into cells via monocarboxylate transporters.",
+    "Summarize what is known about BHB in pediatric populations (e.g., epilepsy).",
+    "Explain how BHB may modulate pain perception or nociception.",
+    "Describe the role of BHB in ketosis induced by SGLT2 inhibitors.",
+    "Summarize BHB’s influence on muscle protein synthesis or breakdown.",
+    "Explain how chronic BHB elevation might impact long-term metabolic health.",
+    "Describe the evidence for BHB’s role in multiple sclerosis or demyelinating diseases.",
+    "Summarize how BHB interacts with adipokines (e.g., leptin, adiponectin).",
+    "Explain the mechanisms by which BHB levels are regulated in the liver.",
+    "Describe BHB’s effects on markers of oxidative DNA damage.",
+    "Summarize the potential role of BHB in migraine pathophysiology.",
+    "Explain how BHB interacts with immune cell subsets (e.g., T cells, macrophages).",
+    "Describe the role of BHB in perioperative medicine or anesthesia contexts.",
+    "Summarize how BHB might affect wound healing or tissue repair.",
+    "Explain the potential interactions between BHB and commonly used medications.",
+    "Describe BHB’s role in diabetic ketoacidosis versus nutritional ketosis.",
+    "Summarize the relationship between BHB and cardiovascular risk markers (e.g., CRP, triglycerides).",
+    "Explain how BHB may influence mitochondrial dynamics (fusion/fission).",
+    "Describe the effects of BHB on mitochondrial membrane potential.",
+    "Summarize the evidence for BHB as a biomarker of metabolic flexibility.",
+    "Explain how BHB interacts with pyruvate dehydrogenase (PDH) activity.",
+    "Describe the relationship between BHB and lactate in exercise metabolism.",
+    "Summarize how BHB affects mitochondrial uncoupling proteins (UCPs).",
+    "Explain how BHB may influence AMPK signaling pathways.",
+    "Describe the role of BHB in the regulation of FOXO transcription factors.",
+    "Summarize what is known about BHB and endothelial nitric oxide synthase (eNOS).",
+    "Explain the interplay between BHB and ketone body metabolism in the heart.",
+    "Describe the potential for BHB to modulate sarcopenia in older adults.",
+    "Summarize the evidence for BHB’s effects on mitochondrial quality control.",
+    "Explain how BHB may impact glycogen storage and utilization.",
+    "Describe BHB’s effects on mitochondrial permeability transition pore (mPTP) opening.",
+    "Summarize the role of BHB in reperfusion injury after ischemic events.",
+    "Explain how BHB may modulate NF-κB signaling in different tissues.",
+    "Describe the relationship between BHB and telomere length or cellular senescence.",
+    "Summarize how BHB influences mitochondrial NADH/NAD+ ratios.",
+    "Explain how BHB impacts peroxisome proliferator-activated receptors (PPARs).",
+    "Describe the role of BHB in the context of ketogenic therapies for neurological disorders.",
+    "Summarize what is known about BHB’s effects on mitochondrial supercomplex formation.",
+    "Explain how BHB may influence ferroptosis or other non-apoptotic cell death pathways.",
+    "Describe the potential for BHB as an adjunct therapy in critical care nutrition.",
+    "Summarize how BHB affects mitochondrial calcium handling.",
+    "Explain how BHB may modulate succinate dehydrogenase (SDH) activity.",
+    "Describe the interplay between BHB and ketolytic enzymes in various tissues.",
+    "Summarize the evidence for BHB in traumatic brain injury models or patients.",
+    "Explain how BHB may influence microglial activation and neuroinflammation.",
+    "Describe the relationship between BHB and brain-derived neurotrophic factor (BDNF).",
+    "Summarize how BHB levels correlate with cognitive test outcomes in clinical trials.",
+    "Explain the role of BHB in metabolic reprogramming of immune cells.",
+    "Describe how BHB may modulate mitochondrial transcription and replication.",
+    "Summarize the interactions between BHB and glutamate/GABA neurotransmission.",
+    "Explain the role of BHB in the context of ketogenic diets used for cancer therapy.",
+    "Describe BHB’s effects on autophagy in different cell types.",
+    "Summarize how BHB may modulate mitophagy and mitochondrial turnover.",
+    "Explain the interactions between BHB and reactive nitrogen species (RNS).",
+    "Describe the potential for BHB to influence frailty or functional status in older adults.",
+    "Summarize what is known about BHB’s effects on lipid peroxidation markers.",
+    "Explain how BHB may modulate T cell exhaustion or memory formation.",
+    "Describe the role of BHB in renal gluconeogenesis during fasting.",
+    "Summarize how BHB interacts with IGF-1 signaling pathways.",
+    "Explain the potential for BHB to modulate brown adipose tissue activation.",
+    "Describe BHB’s effects on mitochondrial cristae structure and function.",
+    "Summarize the role of BHB in the regulation of appetite-related hormones (ghrelin, peptide YY).",
+    "Explain how BHB may modulate ER stress and the unfolded protein response.",
+    "Describe BHB’s impact on mitochondrial antioxidant enzyme expression.",
+    "Summarize how BHB might contribute to resilience against metabolic stress.",
+    "Explain the potential interactions between BHB and sex hormones in metabolic regulation.",
+    "Describe BHB’s role in the context of metabolic syndrome and its components.",
+    "Summarize how BHB may modulate macrophage polarization (M1/M2).",
+    "Explain how BHB influences the balance between oxidative and glycolytic muscle fibers.",
+    "Describe BHB’s role in regulating hepatic gluconeogenesis during prolonged fasting.",
+    "Summarize the interactions between BHB and the hypothalamic–pituitary–adrenal (HPA) axis.",
+    "Explain how BHB may modulate endothelial progenitor cell function.",
+    "Describe BHB’s effects on markers of cellular energy charge (ATP/ADP/AMP).",
+    "Summarize the potential role of BHB in mood disorders such as depression and bipolar disorder.",
+    "Explain how BHB may affect mitochondrial DNA integrity and repair.",
+    "Describe how BHB interacts with one-carbon metabolism and methylation pathways.",
+    "Summarize the evidence for BHB’s role in appetite control via hypothalamic circuits.",
+    "Explain how BHB may modulate circadian rhythms and clock gene expression.",
+    "Describe the role of BHB in the adaptive response to prolonged exercise.",
+    "Summarize the interactions between BHB and glutathione metabolism.",
+    "Explain how BHB may influence mitochondrial ATP synthase activity.",
+    "Describe the potential for BHB to protect against ischemic stroke.",
+    "Summarize how BHB may modulate mitochondrial fusion/fission proteins (MFN, OPA1, DRP1).",
+    "Explain the role of BHB in regulating inflammatory mediators in adipose tissue.",
+    "Describe the interactions between BHB and key regulators of mitochondrial biogenesis (NRF1, TFAM).",
+    "Summarize what is known about BHB’s effects on proteostasis and protein turnover.",
+    "Explain how BHB may modulate neuronal excitability and seizure thresholds.",
+    "Describe BHB’s role in regulating hepatic ketogenesis during different nutritional states.",
+    "Summarize the potential of BHB as a therapeutic agent in age-related cognitive decline.",
+    "Explain how BHB may modulate mitochondrial NADPH production.",
+    "Describe the interactions between BHB and AMPK–mTOR signaling in skeletal muscle.",
+    "Summarize how BHB may impact mitochondrial cardiolipin content and function.",
+    "Explain the role of BHB in regulating mitochondrial biogenesis in the brain.",
+    "Describe the potential for BHB to modulate the gut–brain axis.",
+    "Summarize how BHB may influence mitochondrial cytochrome c oxidase activity.",
+    "Explain the interactions between BHB and peroxisomal fatty acid oxidation.",
+    "Describe the role of BHB in the context of fasting-mimicking diets.",
+    "Summarize how BHB may modulate immune checkpoint pathways in cancer.",
+    "Explain the potential for BHB to modulate skeletal muscle regeneration after injury.",
+    "Describe the interactions between BHB and key regulators of lipid metabolism (SREBP, LXR).",
+    "Summarize how BHB may influence mitochondrial substrate preference in different tissues.",
+    "Explain the role of BHB in regulating mitochondrial oxidative stress responses.",
+    "Describe the potential for BHB to modulate neuroinflammation in psychiatric disorders.",
+    "Characterize BHB’s influence on NLRP3 inflammasome and cytokines; note moderators and contradictions.",
+    "Summarize BHB-linked HDAC effects on chromatin: key marks, gene programs, context.",
+    "Describe exercise-related effects of BHB on performance, substrate use, and recovery.",
+    "Map BHB effects on HCAR2/GPR109A signaling with downstream markers and contexts.",
+    "Synthesize immune effects of BHB across contexts; mention key cytokines and cell responses.",
+    "Summarize safety and tolerability signals for exogenous BHB in human studies.",
+    "Integrate mitochondrial and redox effects of BHB with reported markers and tissues.",
+    "List mechanisms via which BHB can alleviate chronic obstructive pulmonary disease",
 ]
 
 # -----------------------------
@@ -60,7 +216,11 @@ EXAMPLE_PROMPTS = [
 def extract_pmid_from_content(text: str) -> str | None:
     if not text:
         return None
-    m = re.search(r"^---\s*PUBMED\s+ABSTRACT\s*\(\s*(?:PMID[: ]*)?(\d{5,9})\s*\)", text, flags=re.IGNORECASE | re.MULTILINE)
+    m = re.search(
+        r"^---\s*PUBMED\s+ABSTRACT\s*\(\s*(?:PMID[: ]*)?(\d{5,9})\s*\)",
+        text,
+        flags=re.IGNORECASE | re.MULTILINE,
+    )
     if m:
         return m.group(1)
     m = re.search(r"\bPMID\s*[:#]?\s*(\d{5,9})\b", text, flags=re.IGNORECASE)
@@ -75,7 +235,6 @@ def extract_pmid(doc) -> str | None:
         v = md.get(k, None)
         if v and str(v).isdigit():
             return str(v)
-    # If not in metadata, try content
     content = getattr(doc, "page_content", "") or ""
     return extract_pmid_from_content(content)
 
@@ -95,19 +254,16 @@ def fetch_pubmed_title(pmid: str) -> str | None:
         return None
     return None
 
-def get_doc_title_or_snippet(doc) -> str:
+def extract_title(doc, pmid: str | None) -> str:
     md = (getattr(doc, "metadata", None) or {})
     for k in ("title", "paper_title", "article_title"):
         v = md.get(k)
         if v:
             return str(v)
-    # Fallback: PubMed title if we have pmid
-    pmid = extract_pmid(doc)
     if pmid:
         t = fetch_pubmed_title(pmid)
         if t:
             return t
-    # Finally, first non-empty line of content
     content = (getattr(doc, "page_content", "") or "")
     for ln in content.splitlines():
         ln = ln.strip()
@@ -123,22 +279,18 @@ def _download_from_drive(file_id_or_url: str, dest_path: str) -> str:
     Download the FAISS index ZIP file.
 
     `file_id_or_url` can be either:
-      • a Google Drive *file ID* (e.g. '1AbCdEf...')
-      • or a full download URL (https://...).
-
-    In your `secrets.toml`, set `DRIVE_FILE_ID` to either form.
+      • a Google Drive file ID (e.g. '1AbCdEf...')
+      • or a full URL (https://...).
     """
-    # If this looks like a full URL, use it directly; otherwise assume it is a Drive file ID.
     if file_id_or_url.startswith("http://") or file_id_or_url.startswith("https://"):
         url = file_id_or_url
     else:
         url = f"https://drive.google.com/uc?id={file_id_or_url}"
-
-    with st.spinner("Downloading FAISS index..."):
+    with st.spinner("Downloading FAISS index from Google Drive..."):
         out = gdown.download(url, dest_path, quiet=False)
     if out is None:
         raise RuntimeError(
-            "Failed to download FAISS index. Check the sharing permissions and that the URL / file ID is correct."
+            "Failed to download FAISS index from Google Drive. Check sharing permissions & file ID or URL."
         )
     return out
 
@@ -147,37 +299,31 @@ def _ensure_index_ready(cache_dir: str = ".cache") -> str:
     local_zip = os.path.join(cache_dir, "faiss_index.zip")
     local_index_dir = os.path.join(cache_dir, INDEX_SUBDIR)
     index_files = ["index.faiss", "index.pkl"]
-    # If index already extracted, reuse
-    if os.path.isdir(local_index_dir) and all(os.path.exists(os.path.join(local_index_dir, f)) for f in index_files):
+    if os.path.isdir(local_index_dir) and all(
+        os.path.exists(os.path.join(local_index_dir, f)) for f in index_files
+    ):
         return local_index_dir
-    # Otherwise download and extract
     _download_from_drive(DRIVE_FILE_ID, local_zip)
     with zipfile.ZipFile(local_zip, "r") as zf:
         zf.extractall(cache_dir)
-    # If extracted files are not in the subdir, move them
     if not os.path.isdir(local_index_dir):
         os.makedirs(local_index_dir, exist_ok=True)
         for member in os.listdir(cache_dir):
             if member.endswith(".faiss") or member.endswith(".pkl") or member.endswith(".json"):
                 os.replace(os.path.join(cache_dir, member), os.path.join(local_index_dir, member))
-    # Check again
     if not all(os.path.exists(os.path.join(local_index_dir, f)) for f in index_files):
         raise FileNotFoundError("Extracted index folder is missing required files (index.faiss and index.pkl).")
     return local_index_dir
 
 def docs_to_prompt_context(docs: List[Document], max_chars: int = 6000) -> str:
-    """
-    Turn retrieved docs into a single context string with soft character budget.
-    """
     chunks = []
     total = 0
     for d in docs:
         text = getattr(d, "page_content", "") or ""
         if not text.strip():
             continue
-        # Optional metadata heading
         pmid = extract_pmid(d)
-        title = get_doc_title_or_snippet(d)
+        title = extract_title(d, pmid)
         heading_parts = []
         if title and title != "(no title)":
             heading_parts.append(title)
@@ -192,7 +338,6 @@ def docs_to_prompt_context(docs: List[Document], max_chars: int = 6000) -> str:
 
         block_len = len(text_block)
         if total + block_len > max_chars:
-            # If nothing yet, at least include one doc
             if not chunks:
                 chunks.append(text_block[:max_chars])
             break
@@ -203,47 +348,56 @@ def docs_to_prompt_context(docs: List[Document], max_chars: int = 6000) -> str:
         return "(no relevant context found in the index.)"
     return "\n\n---\n\n".join(chunks)
 
+def docs_to_context(docs: List[Document], max_chars: int = 6000) -> str:
+    ctx = docs_to_prompt_context(docs, max_chars=max_chars)
+    return ctx
+
+def format_answer_with_pmids(answer: str) -> str:
+    answer = answer.replace("PMID:", "PMID")
+    def replace_round_bracket(m: re.Match) -> str:
+        inner = m.group(1)
+        pmids = re.findall(r"\b(\d{5,9})\b", inner)
+        if not pmids:
+            return m.group(0)
+        links = [f"[PMID:{p}](https://pubmed.ncbi.nlm.nih.gov/{p}/)" for p in pmids]
+        return "(" + ", ".join(links) + ")"
+
+    def replace_square_bracket(m: re.Match) -> str:
+        inner = m.group(1)
+        pmids = re.findall(r"\b(\d{5,9})\b", inner)
+        if not pmids:
+            return m.group(0)
+        links = [f"[PMID:{p}](https://pubmed.ncbi.nlm.nih.gov/{p}/)" for p in pmids]
+        return "[" + ", ".join(links) + "]"
+
+    answer = re.sub(r"\(([^)]*PMID[^)]*)\)", replace_round_bracket, answer)
+    answer = re.sub(r"\[([^]]*PMID[^]]*)\]", replace_square_bracket, answer)
+    answer = re.sub(r"\[PMID:(\d{5,9})\]", r"[PMID:\1](https://pubmed.ncbi.nlm.nih.gov/\1/)", answer)
+    return answer
+
 # -----------------------------
 # Load heavy resources (cached)
 # -----------------------------
 @st.cache_resource(show_spinner="Loading embeddings, vector store, and LLM...")
 def load_resources():
     os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
-    # 1. Ensure FAISS index is ready
     index_dir = _ensure_index_ready()
-    # 2. Embeddings
     embeddings = OpenAIEmbeddings(model=EMBEDDING_MODEL)
-    # 3. Vectorstore
     vectorstore = FAISS.load_local(index_dir, embeddings=embeddings, allow_dangerous_deserialization=True)
-    # 4. Sanity check on embedding dims
     index_dim = vectorstore.index.d
     test_vec = embeddings.embed_query("ping")
     query_dim = len(test_vec)
     if query_dim != index_dim:
         raise ValueError(
-            f"Embedding dimension mismatch: index dim = {index_dim}, embedding model dim = {query_dim}. "
-            "Make sure EMBEDDING_MODEL matches the model used to build the FAISS index."
+            f"Embedding mismatch: query_dim={query_dim}, index_dim={index_dim}. "
+            f"Set EMBEDDING_MODEL to the one used to build the index."
         )
-    # 5. LLM
-    if CUSTOM_SYSTEM_PROMPT:
-        SYSTEM_PROMPT = CUSTOM_SYSTEM_PROMPT
-    else:
-        SYSTEM_PROMPT = (
-            "You are an expert assistant on beta-hydroxybutyrate (BHB). You answer strictly based on the provided "
-            "context, which comes from scientific literature. If the context does not contain enough information to "
-            "answer confidently, you state this explicitly.\n\n"
-            "When you make factual statements, you cite supporting PubMed IDs (PMIDs) from the context. "
-            "If you cannot find a specific PMID for a claim, be transparent that it is uncertain or speculative.\n\n"
-            "Always:\n"
-            "1) Start with a concise, direct answer (2–4 sentences).\n"
-            "2) Then provide a more detailed explanation.\n"
-            "3) Finally, list key PMIDs with 1–2 bullet points each summarizing their relevance.\n"
-            "If you mention numerical results, specify population, dose, and key conditions whenever possible."
-        )
-    llm = ChatOpenAI(
-        model=OPENAI_MODEL,
-        temperature=0.2,
+    llm = ChatOpenAI(model=OPENAI_MODEL, temperature=0)
+    DEFAULT_SYSTEM_PROMPT = (
+        "You are a careful scientific assistant. Answer the user's question using ONLY the provided context. "
+        "If the context lacks the answer, say you don't know. Keep the answer concise and cite sources as [PMID:xxxxx]."
     )
+    SYSTEM_PROMPT = CUSTOM_SYSTEM_PROMPT if CUSTOM_SYSTEM_PROMPT else DEFAULT_SYSTEM_PROMPT
     prompt = ChatPromptTemplate.from_messages(
         [
             ("system", SYSTEM_PROMPT),
@@ -259,103 +413,148 @@ def load_resources():
         | llm
         | StrOutputParser()
     )
-    retriever = vectorstore.as_retriever(
-        search_type="similarity",
-        search_kwargs={"k": 8},
+    return vectorstore, doc_chain, embeddings, index_dim, query_dim
+
+# -----------------------------
+# Sidebar
+# -----------------------------
+with st.sidebar:
+    st.header("Settings")
+    top_k = st.slider(
+        "Number of retrieved abstracts",
+        min_value=1,
+        max_value=100,
+        value=30,
+        help=(
+            "Based on your prompt, the RAG system selects the most relevant abstracts to answer your prompt. "
+            "With this slider, you can select the number of abstracts it uses as overall context."
+        ),
     )
+    search_type = st.selectbox(
+        "Retrieval mode",
+        ["similarity", "mmr"],
+        help=(
+            "Similarity: returns the closest matching abstracts. Good for depth; may repeat similar studies. "
+            "MMR (Diverse): returns a mix of relevant abstracts from different angles/models. Fewer repeats; broader view."
+        ),
+    )
+    show_context = st.checkbox("Show retrieved context", value=False)
+    st.divider()
+    if st.button("Clear cached resources"):
+        load_resources.clear()
+        st.success("Cleared! Resources will be reloaded on next query.")
 
-    return {
-        "embeddings": embeddings,
-        "vectorstore": vectorstore,
-        "retriever": retriever,
-        "doc_chain": doc_chain,
-    }
+# Load resources (cached once)
+vectorstore, doc_chain, embeddings, index_dim, query_dim = load_resources()
+st.sidebar.caption(f"Index dim: {index_dim} | Query dim: {query_dim}")
 
 # -----------------------------
-# Main UI
+# Pre-run handler for example buttons (before text_input uses key='query')
 # -----------------------------
-resources = load_resources()
-retriever = resources["retriever"]
-doc_chain = resources["doc_chain"]
+pending = st.session_state.pop("pending_query", None)
 
-# Left: input; Right: retrieved context
-col_input, col_context = st.columns([0.55, 0.45])
+# -----------------------------
+# Main layout
+# -----------------------------
+col_left, col_right = st.columns([0.55, 0.45])
 
-with col_input:
+with col_left:
     st.subheader("Ask a question about BHB")
-    user_question = st.text_area(
+    query = st.text_area(
         "Question",
-        value="Summarize key mechanisms by which BHB affects mitochondrial function.",
+        value=pending if pending is not None else "Summarize key mechanisms by which BHB affects mitochondrial function.",
         height=100,
+        key="query",
     )
-
-    show_advanced = st.checkbox("Show advanced settings", value=False)
-    if show_advanced:
-        with st.expander("Retrieval & model settings", expanded=False):
-            k = st.slider("Number of documents to retrieve (k)", min_value=3, max_value=20, value=8, step=1)
-            retriever.search_kwargs["k"] = k
 
     st.markdown("**Or pick an example question:**")
+    ex_cols = st.columns(2)
     for i, ex in enumerate(EXAMPLE_PROMPTS, start=1):
-        if st.button(ex, key=f"ex_{i}"):
-            user_question = ex
-            st.experimental_rerun()
+        col = ex_cols[(i - 1) % 2]
+        with col:
+            if st.button(ex, key=f"ex_{i}"):
+                st.session_state["pending_query"] = ex
+                st.experimental_rerun()
 
-    run_button = st.button("Run")
+    submit = st.button("Run")
 
-with col_context:
-    st.subheader("Retrieved literature context")
-
-    if "last_docs" not in st.session_state:
-        st.session_state["last_docs"] = []
-
-    last_docs = st.session_state["last_docs"]
-    if last_docs:
-        st.write("Below are the documents retrieved for the last answer:")
-        for i, d in enumerate(last_docs, start=1):
-            md = (getattr(d, "metadata", None) or {})
-            pmid = extract_pmid(d)
-            title = get_doc_title_or_snippet(d)
-            url = None
-            if pmid:
-                url = f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/"
-            pmid_str = pmid if pmid else "N/A"
-            left, right = st.columns([0.80, 0.20])
-            with left:
-                header = f"{i}. {title} — PMID {pmid_str}"
-                with st.expander(header):
-                    st.write(d.page_content)
-            with right:
-                if url:
-                    st.link_button("View on PubMed", url, use_container_width=True)
-                else:
-                    st.caption("No PubMed link")
-            st.divider()
+with col_right:
+    st.subheader("Info & tips")
+    st.markdown(
+        """
+- The AI uses real scientific abstracts about BHB as its primary context.
+- Questions that are *specific* (e.g., population, dose, outcome) tend to yield the most useful answers.
+- You can switch retrieval mode in the sidebar and change how many abstracts are used.
+- For transparency, you can inspect all the retrieved context and the underlying PubMed entries.
+        """
+    )
 
 # -----------------------------
-# Run query
+# Retrieval
 # -----------------------------
-if run_button and user_question.strip():
-    with st.spinner("Retrieving context and generating answer..."):
-        # Support both old-style retrievers (with get_relevant_documents)
-        # and new Runnable-style retrievers (use .invoke).
-        try:
-            if hasattr(retriever, "get_relevant_documents"):
-                docs = retriever.get_relevant_documents(user_question)
+def retrieve(query: str, k: int, mode: str) -> List[Document]:
+    if mode == "mmr":
+        fetch_k = max(k * 3, 10)
+        fetch_k = min(fetch_k, 100)
+        return vectorstore.max_marginal_relevance_search(query, k=k, fetch_k=fetch_k)
+    return vectorstore.similarity_search(query, k=k)
+
+# -----------------------------
+# Main action
+# -----------------------------
+docs = []
+answer_md = ""
+
+# Spinner slot is right under the text box in the left column
+spinner_slot = col_left.empty()
+
+# Results area is below everything (answer + sources)
+# This matches the original layout: answer on top, sources below, all in a single column
+results_slot = st.container()
+
+if submit and query.strip():
+    with spinner_slot.container():
+        with st.spinner("Retrieving and generating..."):
+            docs = retrieve(query, top_k, search_type)
+            if docs:
+                result = doc_chain.invoke({"context": docs, "question": query})
+                answer_md = format_answer_with_pmids(result)
             else:
-                # Newer LangChain retrievers behave like Runnables
-                docs = retriever.invoke(user_question)
-        except Exception as e:
-            st.error(f"Error during retrieval: {e}")
-            docs = []
+                answer_md = (
+                    "I could not retrieve any relevant documents from the index for this query. "
+                    "Please try rephrasing or using a different question."
+                )
 
-        st.session_state["last_docs"] = docs
-        answer = doc_chain.invoke({"question": user_question, "context": docs})
+    spinner_slot.empty()
 
-    st.subheader("Answer")
-    st.write(answer)
-    if not docs:
-        st.info("No documents were retrieved for this question. The answer may be based on prior model knowledge.")
-elif not run_button:
+    with results_slot:
+        if not docs:
+            st.warning("No documents retrieved. Check your query or embedding/model compatibility.")
+        else:
+            if show_context:
+                st.markdown("### Retrieved context")
+                st.code(docs_to_context(docs))
+
+            st.markdown("### Answer")
+            st.markdown(answer_md)
+
+            st.markdown("### Sources")
+            for i, d in enumerate(docs, start=1):
+                pmid = extract_pmid(d) or "NA"
+                title = extract_title(d, pmid)
+                pmid_str = str(pmid)
+                url = f"https://pubmed.ncbi.nlm.nih.gov/{pmid_str}/" if pmid_str.isdigit() else None
+
+                left, right = st.columns([0.80, 0.20])
+                with left:
+                    header = f"{i}. {title} — PMID {pmid_str}"
+                    with st.expander(header):
+                        st.write(d.page_content)
+                with right:
+                    if url:
+                        st.link_button("View on PubMed", url, use_container_width=True)
+                    else:
+                        st.caption("No PubMed link")
+                st.divider()
+else:
     st.info("Enter a question and click **Run**, or choose an example below.")
-
