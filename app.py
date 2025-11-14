@@ -494,12 +494,25 @@ with col_context:
 # -----------------------------
 if run_button and user_question.strip():
     with st.spinner("Retrieving context and generating answer..."):
-        docs = retriever.get_relevant_documents(user_question)
+        # Support both old-style retrievers (with get_relevant_documents)
+        # and new Runnable-style retrievers (use .invoke).
+        try:
+            if hasattr(retriever, "get_relevant_documents"):
+                docs = retriever.get_relevant_documents(user_question)
+            else:
+                # Newer LangChain retrievers behave like Runnables
+                docs = retriever.invoke(user_question)
+        except Exception as e:
+            st.error(f"Error during retrieval: {e}")
+            docs = []
+
         st.session_state["last_docs"] = docs
         answer = doc_chain.invoke({"question": user_question, "context": docs})
+
     st.subheader("Answer")
     st.write(answer)
     if not docs:
         st.info("No documents were retrieved for this question. The answer may be based on prior model knowledge.")
 elif not run_button:
     st.info("Enter a question and click **Run**, or choose an example below.")
+
