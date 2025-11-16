@@ -196,28 +196,32 @@ def docs_to_context(docs: List[Document], max_chars: int = 6000) -> str:
     ctx = docs_to_prompt_context(docs, max_chars=max_chars)
     return ctx
 
-def format_answer_with_pmids(answer: str) -> str:
-    answer = answer.replace("PMID:", "PMID")
-    def replace_round_bracket(m: re.Match) -> str:
-        inner = m.group(1)
-        pmids = re.findall(r"\b(\d{5,9})\b", inner)
-        if not pmids:
-            return m.group(0)
-        links = [f"[PMID:{p}](https://pubmed.ncbi.nlm.nih.gov/{p}/)" for p in pmids]
-        return "(" + ", ".join(links) + ")"
+def format_answer_with_pmids(text: str) -> str:
+    """Turn [PMID:12345, 67890] and 'PMID: 12345, 67890' into clickable PubMed links."""
+    if not text:
+        return ""
 
-    def replace_square_bracket(m: re.Match) -> str:
-        inner = m.group(1)
-        pmids = re.findall(r"\b(\d{5,9})\b", inner)
-        if not pmids:
-            return m.group(0)
-        links = [f"[PMID:{p}](https://pubmed.ncbi.nlm.nih.gov/{p}/)" for p in pmids]
-        return "[" + ", ".join(links) + "]"
+    def num_to_link(m: re.Match) -> str:
+        n = m.group(1)
+        return f"[{n}](https://pubmed.ncbi.nlm.nih.gov/{n}/)"
 
-    answer = re.sub(r"\(([^)]*PMID[^)]*)\)", replace_round_bracket, answer)
-    answer = re.sub(r"\[([^]]*PMID[^]]*)\]", replace_square_bracket, answer)
-    answer = re.sub(r"\[PMID:(\d{5,9})\]", r"[PMID:\1](https://pubmed.ncbi.nlm.nih.gov/\1/)", answer)
-    return answer
+    # [PMID: ...] form, possibly multiple IDs inside
+    def repl_bracket(m: re.Match) -> str:
+        inner = m.group(1)
+        linked_inner = re.sub(r"\b(\d{5,9})\b", num_to_link, inner)
+        return f"[PMID:{linked_inner}]"
+
+    text = re.sub(r"\[PMID:\s*(.*?)\]", repl_bracket, text, flags=re.IGNORECASE)
+
+    # Plain "PMID: 12345, 67890" form
+    def repl_plain(m: re.Match) -> str:
+        nums = m.group(1)
+        linked = re.sub(r"\b(\d{5,9})\b", num_to_link, nums)
+        return f"PMID:{linked}"
+
+    text = re.sub(r"(?i)\bPMID[:\s]+\s*([0-9][0-9,\s]{4,})", repl_plain, text)
+    return text
+
 
 # -----------------------------
 # Load heavy resources (cached)
